@@ -1,1 +1,3 @@
- [![npm](https://img.shields.io/npm/v/analytics-sdk-js.svg?maxAge=2592000)](https://www.npmjs.com/package/analytics-sdk-js)
+# blinkmobile / analytics-sdk-js
+
+The javascript SDK for BlinkMobile analytics. Works in the browser (with a build step) and on the server.
