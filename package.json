@@ -17,6 +17,7 @@
     "eslint-plugin-standard": "^2.1.1",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.42.0",
+    "jest": "^19.0.2",
     "remark-cli": "^3.0.0",
     "remark-lint": "^6.0.0",
     "remark-preset-lint-recommended": "^2.0.0"
@@ -31,8 +32,11 @@
     "npm": ">=3"
   },
   "homepage": "https://git.blinkm.co/blinkmobile/analytics-sdk-js",
+  "jest": {
+    "collectCoverage": true
+  },
   "keywords": [],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "index.js",
   "private": true,
   "repository": {
@@ -43,7 +47,8 @@
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
     "flow_check": "flow check",
+    "jest": "jest",
     "remark": "remark . --use remark-preset-lint-recommended",
-    "test": "echo \"No test specified\" && npm run eslint && npm run flow_check && npm run fixpack && npm run remark"
+    "test": "npm run jest && npm run eslint && npm run flow_check && npm run fixpack && npm run remark"
   }
 }
