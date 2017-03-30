@@ -47,7 +47,7 @@
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
     "flow_check": "flow check",
-    "jest": "jest",
+    "jest": "jest lib",
     "remark": "remark . --use remark-preset-lint-recommended",
     "test": "npm run jest && npm run eslint && npm run flow_check && npm run fixpack && npm run remark"
   }
