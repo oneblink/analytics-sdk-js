@@ -32,12 +32,12 @@
     "npm": ">=3"
   },
   "homepage": "https://github.com/blinkmobile/analytics-sdk-js",
-  "jest": {
-    "collectCoverage": true
-  },
   "keywords": [],
 	"license": "BSD-3-Clause",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:blinkmobile/analytics-sdk-js.git"
