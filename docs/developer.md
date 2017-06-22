@@ -27,6 +27,7 @@ git clone git@github.com:blinkmobile/analytics-sdk-js.git
 ```
 mkdir analytics-sdk-test-project
 cd analytics-sdk-test-project
+git init
 ```
 
 [3] Use our fork of @jokeyrhyme's convenient script to set it up as a Blink-ready project (`npm install -g https://github.com/blinkmobile/node-init.js` if you don't already have it installed)
