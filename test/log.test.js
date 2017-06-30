@@ -11,10 +11,12 @@ const jwt = require('jsonwebtoken')
 const ACCESS_KEY = '58dc86987e2c7853a6cdf008'
 const SECRET_KEY = 'SECRET_KEY'
 
-const eventToLog = [{
-  'name': 'TEST_EVENT',
-  '__v': 0
-}]
+const eventToLog = [
+  {
+    name: 'TEST_EVENT',
+    __v: 0
+  }
+]
 
 const secret = SECRET_KEY
 // NOTE: This "iss" will change when the container is rebuilt
@@ -30,14 +32,14 @@ describe('log()', () => {
   test('it should return a 200 response', () => {
     const events = require('../lib/events.js')
     expect.assertions(1)
-    return events.log(
-      'http://localhost:3000',
-      token,
-      'TEST_EVENT',
-      eventToLog
-    )
-    .then((res) => {
-      return expect(res.events[0].name).toBe('TEST_EVENT')
-    })
+    return events
+      .log('http://localhost:3000', token, 'TEST_EVENT', eventToLog)
+      .then(res => {
+        if (res !== null && res !== undefined) {
+          return expect(res.events[0].name).toBe('TEST_EVENT')
+        } else {
+          return expect(false).toBe(true) // Is there a better way to fail a Jest test?
+        }
+      })
   })
 })
