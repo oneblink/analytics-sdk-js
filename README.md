@@ -4,7 +4,7 @@ The javascript SDK for sending custom events to the BlinkMobile Simple Analytics
 
 If you are a BlinkMobile customer, you can access your analytics through the [BlinkMobile Analytics Console](https://console.blinkm.io) or your custom installation if you have one. For more information, please contact support@blinkmobile.com.au.
 
-Please Note: This is an alpha release. It is currently being used by a number of BlinkMobile NodeJS projects. Theorerically, it could work for client-side javascript applications with a build step but it has not been tested in that context.
+Please Note: This is only just out of alpha release. It is currently being used by a number of BlinkMobile NodeJS projects. It has not yet been tested on client-side projects. If you have a special requirement, please [request a feature](https://github.com/blinkmobile/analytics-sdk-js/issues).
 
 ## Installation
 
