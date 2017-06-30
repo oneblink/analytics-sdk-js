@@ -1,7 +1,7 @@
 {
   "name": "@blinkmobile/analytics-sdk",
   "description": "The javascript SDK for BlinkMobile analytics. Works in the browser (with a build step) and on the server.",
-  "version": "0.1.0-alpha",
+  "version": "1.0.0-beta.1",
   "bugs": {
     "url": "https://git.blinkm.co/blinkmobile/analytics-sdk-js/issues"
   },
