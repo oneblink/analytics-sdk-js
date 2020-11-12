@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "jsonwebtoken": "8.2.1",
-    "node-fetch": "2.1.2"
+    "node-fetch": "2.6.1"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
